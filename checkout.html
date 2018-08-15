@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角血拼賣賣-結帳
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-heart text-info mr-2"></i>六角血拼賣賣
+        </a>
+
+    </nav>
+    <!-- content -->
+    <div class="container">
+        <h1 class="h2 mt-3 text-secondary text-center">六角血拼賣賣 結帳</h1>
+    </div>
+    <!-- 流程圖 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md col-12">
+                <div class="alert alert-rounded alert-info text-center" role="alert">1.輸入訂單資料
+                </div>
+            </div>
+            <div class="col-md col-12">
+                <div class="alert alert-rounded alert-light  text-center" role="alert">2.金流付款
+                </div>
+            </div>
+            <div class="col-md col-12">
+                <div class="alert alert-rounded alert-light text-center " role="alert">3.完成
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 購物車 -->
+    <div class="container my-3">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card bg-light">
+                    <div class="card-header d-flex" id="headingOne">
+                        <button class="btn  btn-outline-info btn-sm" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            顯示購物車細節
+                            <i class="fas fa-angle-down"></i>
+                        </button>
+                        <h5 class="ml-auto mb-0 py-2">總計金額 NT.1479</h4>
+                    </div>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <h4 class="mt-3 text-center">購買資訊</h4>
+                    <table class="table table-responsive">
+                        <thead>
+                            <tr>
+                                <th class="align-middle  text-center" width="50"></th>
+                                <th class="align-middle  text-center" width="150">圖片</th>
+                                <th class="align-middle  text-center">商品名稱</th>
+                                <th class="align-middle  text-center" width="80">尺寸</th>
+                                <th class="align-middle  text-center" width="80">數量</th>
+                                <th class="align-middle  text-center" width="100">小計</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="金牌西裝 1 件">
+                                        <i class="fas fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle text-center p-2">
+                                    <img src="https://images.unsplash.com/photo-1494281258937-45f28753affd?w=1350" class="w-100 " alt="">
+                                </td>
+                                <td class="align-middle  text-center">金牌西裝</td>
+                                <td class="align-middle  text-center">L</td>
+                                <td class="align-middle  text-center">1件</td>
+                                <td class="align-middle text-right">NT.520</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModal" class="text-muted" data-toggle="modal" data-title="金牌女裝 1 件">
+                                        <i class="fas fa-trash" aria-hidden="true"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle text-center p-2">
+                                    <img class="card-img-top " src="https://images.unsplash.com/photo-1507535806243-273cbc002157?ixlib=rb-0.3.5&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;s=daf0a3a720a664c0b90050d9e9d20334&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60 "
+                                        class="w-100 " alt="Card image cap ">
+                                </td>
+                                <td class="align-middle text-center">金牌女裝</td>
+                                <td class="align-middle text-center">S</td>
+                                <td class="align-middle text-center">1件</td>
+                                <td class="align-middle text-right">NT.899</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="5" class="text-right">運費</td>
+                                <td class="text-right">NT.60</td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="text-right">總計</td>
+                                <td class="text-right">NT.1479</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <form class=" my-3">
+                    <h4 class="mt-3 text-center">訂購人資訊</h4>
+                    <div class="form-row">
+                        <div class="form-group  col-md-6">
+                            <label for="inputname">Name</label>
+                            <input type="text" class="form-control" id="inputname" placeholder="Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                    </div>
+                    <h4 class="mt-3 text-center">送貨地址</h4>
+                    <div class="form-row " id="twzipcode">
+                        <div class="form-group col-6" data-role="county">
+                            <label for="">City</label>
+                        </div>
+                        <div class="form-group col-6" data-role="district">
+                            <label for="">District</label>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" name="inputAddress">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="index.html" class="btn btn-secondary mr-2">繼續選購</a>
+                        <button type="submit" class="btn btn-primary" >繼續付款</button>
+                </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- removemodal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="removeModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="removeModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-outline-danger ">Remove</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="bg-light py-3 text-center text-muted ">
+        <div class="container ">
+            <ul class="list-inline text-center ">
+                <li class="list-inline-item ">© Copright 2017 六角血拼賣賣</li>
+                <li class="list-inline-item ">
+                    <a href="# ">Instagram</a>
+                </li>
+                <li class="list-inline-item ">
+                    <a href="# ">Facebook</a>
+                </li>
+                <li class="list-inline-item ">
+                    <a href="# ">Twitter</a>
+                </li>
+            </ul>
+            <p>Made with Bootstrap4</p>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+    crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+    crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+    crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+<script src="js/all.js "></script>
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角血拼賣賣-付款
+    </title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-heart text-info mr-2"></i>六角血拼賣賣
+        </a>
+
+    </nav>
+    <!-- content -->
+    <div class="container">
+        <h1 class="h2 mt-3 text-secondary text-center">六角血拼賣賣 付款</h1>
+    </div>
+    <!-- 流程圖 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md col-12">
+                <div class="alert alert-rounded alert-dark text-center" role="alert">1.輸入訂單資料
+                </div>
+            </div>
+            <div class="col-md col-12">
+                <div class="alert alert-rounded alert-info  text-center" role="alert">2.金流付款
+                </div>
+            </div>
+            <div class="col-md col-12">
+                <div class="alert alert-rounded alert-light text-center " role="alert">3.完成
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 結帳 -->
+    <div class="container my-3">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <h4 class="text-center">付款資料</h4>
+                <form class="my-3 needs-validation" novalidate>
+                    <div class="form-group">
+                        <label for="Creaditcard">Creaditcard Number</label>
+                        <input type="text" class="form-control" id="Creaditcard" placeholder="請輸入信用卡卡號" required>
+                    </div>
+                    <div class="form-row ">
+                        <div class="form-group col-sm-6">
+                            <label for="expirationDate">Expiration Date</label>
+                            <input type="text" class="form-control" id="expirationDate" placeholder="MMYY" required>
+                        </div>
+                        <div class="form-group col-sm-6">
+                            <label for="cvv">CVV</label>
+                            <input type="text" class="form-control" id="cvv" placeholder="CVV" required>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="checkout.html" class="btn btn-secondary mr-2">上一步</a>
+                        <button type="submit" class="btn btn-primary" >確認付款</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-light py-3 text-center text-muted ">
+        <div class="container ">
+            <ul class="list-inline text-center ">
+                <li class="list-inline-item ">© Copright 2017 六角血拼賣賣</li>
+                <li class="list-inline-item ">
+                    <a href="# ">Instagram</a>
+                </li>
+                <li class="list-inline-item ">
+                    <a href="# ">Facebook</a>
+                </li>
+                <li class="list-inline-item ">
+                    <a href="# ">Twitter</a>
+                </li>
+            </ul>
+            <p>Made with Bootstrap4</p>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+    crossorigin="anonymous "></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+    crossorigin="anonymous "></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js " integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T "
+    crossorigin="anonymous "></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-twzipcode@1.7.14/jquery.twzipcode.min.js"></script>
+<script src="js/all.js "></script>
+
+</html>
